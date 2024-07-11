@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" packages="">
+
+    <Appenders>
+        <File name="HTMLFile" fileName="logs/app.html" append="false">
+            <HTMLLayout title="App Log" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="HTMLFile" />
+        </Root>
+    </Loggers>
+
+</Configuration>
